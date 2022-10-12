@@ -27,7 +27,10 @@
 }
 
 .body {
-  background-image: radial-gradient(circle closest-corner at 50% 17%, #ffebc6, #ffebc6 8%, #88e288 28%, #3ad391);
+  background-image: radial-gradient(circle closest-corner at 50% 30%, #ffebc6, #ffebc6 8%, #88e288 28%, #3ad391);
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+  cursor: auto;
 }
 
 .title {
@@ -61,26 +64,168 @@
 }
 
 .div-block-2 {
-  padding-top: 38px;
+  margin-top: 6px;
+  margin-bottom: 0px;
+  padding-top: 73px;
+}
+
+.lottie-animation {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  max-height: 230px;
+  margin-bottom: -23px;
+  padding-top: 21px;
+  padding-bottom: 0px;
+  clear: both;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-items: stretch;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 9px;
+  grid-row-gap: 9px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.div-block-3 {
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.div-block-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.image-3 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 @media screen and (max-width: 991px) {
   .body {
-    background-image: radial-gradient(circle closest-corner at 50% 17%, #ffebc6, #ffebc6 8%, #88e288 45%, #3ad391);
+    background-image: radial-gradient(circle closest-corner at 50% 28%, #ffebc6, #ffebc6 8%, #88e288 45%, #3ad391);
+  }
+
+  .lottie-animation {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .div-block-2 {
+    position: relative;
+    padding-top: 38px;
+  }
+
+  .lottie-animation {
+    max-height: 280px;
+    margin-bottom: 6px;
   }
 }
 
 @media screen and (max-width: 479px) {
   .body {
-    background-image: radial-gradient(circle closest-corner at 50% 13%, #ffebc6, #ffebc6 8%, #88e288 45%, #3ad391);
+    background-image: radial-gradient(circle closest-corner at 50% 28%, #ffebc6, #ffebc6 8%, #88e288 45%, #3ad391);
   }
 
   .title {
-    font-size: 43px;
+    font-size: 30px;
     line-height: 39px;
+  }
+
+  .subtitle {
+    font-size: 34px;
   }
 
   .image-2 {
     padding-top: 8px;
+  }
+
+  .lottie-animation {
+    position: static;
+    top: 40px;
+    display: block;
+    max-height: 340px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 28px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
+  .image-3 {
+    display: block;
+    margin-top: 36px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
   }
 }
